@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Jared Matteson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>100 Thieves</title>
+        <style>
+            *{
+                font-family: "Arial Narrow";
+            }
+            body{
+                margin: auto;
+                background-color: black;
+            }
+            #container{
+                display: grid;
+                grid-template: auto 80vh auto / 1fr 1fr 1fr 1fr;
+                grid-template-areas: 'header header header header'
+                                        'main main main main'
+                                    'footer footer footer footer';
+                
+            }
+            header {
+                grid-area: header;
+                margin-left: 1%;
+                margin-right: 1%;
+                border-bottom: solid rgb(128, 0, 0);
+                display: grid;
+                grid-template: 16vh / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                align-content: center;
+                justify-content: center;
+                
+            }
+            main{ 
+                    grid-area: main;
+            }
+            footer{ 
+                grid-area: footer;
+                border-top: solid rgb(128, 0, 0);
+                background-color: white;
+                display:grid;
+                width: 100%;
+                grid-template: 10vh / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                justify-content: space-evenly;
+                
+                
+
+
+            }
+            #thieves_logo{
+                height: 18vh;
+            }
+            #topnav a {
+                color: rgb(128,0,0);
+                justify-self:center;
+                align-self: center;
+                text-decoration: none;
+                font-size: 3vh;
+                font-weight: bold;
+            }
+            #topnav input{
+                justify-self: center;
+                align-self: center;
+                border-radius: 8px;
+                height: 3vh;
+                width: 15vw;
+            }
+            #topnav a:hover{
+                background-color: rgb(128,0,0);
+                color: white;
+            }
+            
+            #botnav a{
+                color: rgb(128,0,0);
+                justify-self: center;
+                align-self: center;
+                text-decoration: none;
+                font-size: 3vh;
+                font-weight: bold;
+                text-align: right;
+            
+            }
+            #twitter_logo{
+                height: 75%;
+                align-self: center;
+                
+            }
+            #insta_logo{
+                height: 80%;
+                align-self: center;
+               
+            }
+            #youtube_logo{
+                height: 100%;
+                align-self: center;
+               
+            }
+            
+            .socials{
+                width: 10vw;
+                grid-column: 8;
+                justify-self: right;
+                height: 5vh;
+                align-self: center;
+            }
+            .footer_links{
+                width: 10vw;
+                height: 5vh;
+
+            }
+
+            .bodyGIF{
+                height: 30vh;
+            }
+
+
+           /* .box_item1{                
+                width: 70%;
+                height: 80%;
+                border: solid white;
+                
+            }
+            .box_item2
+            {
+                height: 80%;
+                width: 30%;
+                border: solid white;
+            }
+            #flexcontainer{
+                display: flex;
+                
+            }
+            
+            
+            #logo_container{
+                height: 150px;
+            }
+            
+            
+            */
+
+            @media screen and (max-width: 1024px) {
+                #topnav a{
+                    
+                    font-size: 2vh;
+                    
+                }
+
+                #botnav a{
+                
+                    font-size: 2vh;
+                           
+                }
+
+                .socials{
+                    width: 8vw;              
+                    height: 3vh;
+                    
+                }
+
+            }
+            @media screen and (max-width: 768px) {
+                #topnav a{
+                    
+                    font-size: 2vh;
+                    
+                }
+
+                #botnav a{
+                
+                    font-size: 2vh;
+                           
+                }
+
+                .socials{
+                    width: 8vw;              
+                    height: 3vh;
+                    columns: 7;
+                    
+                }
+
+                #thieves_logo{
+                    height: 12vh;
+                    
+                }
+
+                header{
+                    grid-template: 12vh / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header id="topnav">
+                <div id="logo_container">
+                    <a class="active" href="#home">
+                        <img id="thieves_logo" src="images/100_Thieves_Transparent.png" alt="Thieves Logo">
+                    </a>
+                </div>
+                <a href="#LA_Thieves_Shop">LA THIEVES SHOP</a>
+                <a href="#Content_Creators">CONTENT CREATORS</a>
+                <a href="#Teams">TEAMS</a>
+                <input type="text" placeholder="SEARCH...">
+                <a href="#Login">LOGIN</a>
+                <a href="#Bag">BAG(0)</a>
+                
+            </header>
+            <main id="flexcontainer">
+                <aside class= "box_item1">
+                    <h1>Box2</h1>
+                </aside>
+                <aside class="box_item2">
+                    <h1>Box3</h1>
+                </aside>
+                <div>
+                    <a class= "bodyGIF" href="#LATHIEVESSHOP">
+                        <img id="thieves_apparel" src="images/Gif_or_Video_panel.png" alt="Thieves Hoodie">
+                    </a>
+                </div>
+
+            </main>
+
+            <footer id="botnav">
+                
+                <a class="footer_links" href="#About">ABOUT</a>
+                <a class="footer_links" href="#News">NEWS</a>
+                <a class="footer_links" href="#Partners">PARTNERS</a>
+                <a class="footer_links" href="#Careers">CAREERS</a>
+                <a class="footer_links" href="#Contact">CONTACT</a>
+                <a class="footer_links" href="#FAQ">FAQ</a>
+               
+                <div class="socials">
+                    <a href="Twitter">
+                        <img id="twitter_logo" src="images/Red_Twitter_logo.png" alt="Thieves Twitter">
+                    </a>
+                    <a href="Instagram">
+                        <img id="insta_logo" src="images/red_instagram_logo.png" alt="Thieves Instagram">
+                    </a>
+                    <a href="Youtube">
+                        <img id="youtube_logo" src="images/youtube_logo.png" alt="Thieves Youtube">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
